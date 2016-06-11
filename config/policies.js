@@ -49,7 +49,7 @@ module.exports.policies = {
 		// feed : ['isNiceToAnimals', 'hasRabbitFood']
 	// }
 
-    getController: {
-        '*': "sessionAuth"
-    }
+    //GetController: {
+    //    '*': 'sessionAuth'
+    //}
 };

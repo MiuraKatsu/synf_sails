@@ -26,9 +26,11 @@ module.exports = {
 
 
     user:function(req,res){
-        console.log(req.body);
+        console.log(req.session);
 
-        sails.models['user'].findOne(req.body).then(function(ret){
+        user_id = req.session.passport.user;
+
+        sails.models['user'].findOne(user_id).then(function(ret){
             return res.json(ret);
         });
     }

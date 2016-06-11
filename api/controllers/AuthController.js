@@ -51,6 +51,7 @@ module.exports = {
    */
   logout: function (req, res) {
     req.logout();
+    req.session.destroy();
     return res.json({
       todo: 'logout() is not implemented yet!'
     });

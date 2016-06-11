@@ -27,7 +27,7 @@ module.exports = {
           model: 'family',
       },
       toJSON: function() {
-          console.log("toJson");
+          //console.log("toJson");
           var obj = this.toObject();
           delete obj.password;
           return obj;
