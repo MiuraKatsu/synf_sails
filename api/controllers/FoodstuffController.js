@@ -1,0 +1,11 @@
+/**
+ * FoodstuffController
+ *
+ * @description :: Server-side logic for managing foodstuffs
+ * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
+ */
+
+module.exports = {
+	
+};
+
