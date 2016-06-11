@@ -8,9 +8,8 @@
 module.exports = {
 
     makeInsufficientFoodstuff:function(req,res){
-        console.log(req.user.owner);
-        console.log(req.body);
-        req_json = req.body;
+        //console.log(req.user.owner);
+        //console.log(req.body);
 
         Foodstuff.findOne(req.body.id).then(function(ret){
             console.log(ret);
@@ -28,9 +27,20 @@ module.exports = {
                 category: ret.category,
                 order_date: order_date,
                 owner: req.user.owner}).then(function(ret){
-                console.log(ret);
+                    console.log(ret);
+                    InsufficientFoodstuff.find({owner:req.user.owner}).then(function(ret){
+                        return res.json(ret);
+                    });
             });
         });
+    },
+
+    dustInsufficientFoodstuff: function(req,res){
+        //console.log(req.user.owner);
+        //console.log(req.body);
+        //
+
     }
+
 };
 
