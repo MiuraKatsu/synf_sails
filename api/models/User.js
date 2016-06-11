@@ -26,6 +26,7 @@ module.exports = {
       owner: {
           model: 'family',
       },
+
       toJSON: function() {
           //console.log("toJson");
           var obj = this.toObject();

@@ -17,10 +17,17 @@ module.exports = {
           collection: 'user',
           via: 'owner'
       },
+
       fridge: {
           collection: 'fridge',
           via: 'owner'
+      },
+      insufficient_foodstuff: {
+          collection: 'insufficientFoodstuff',
+          via: 'owner'
       }
+
+
 
   }
 };

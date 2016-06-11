@@ -10,22 +10,23 @@ module.exports = {
   tableName: 'in_fridge_foodstuff',
   attributes: {
 
-      name: {
-          type: 'string'
-      },
-      category_code:{
-          type: 'string'
-      },
-      best_befoe_date: {
-          type: 'date'
-      },
-      count: {
-          type: 'int'
-      },
+    category: {
+        type: 'int'
+    },
+    foodstuff: {
+        type: 'int'
+    },
+    foodstuff_name: {
+        type: 'string'
+    },
+    best_before_date: {
+        type: 'date'
+    },
 
-      owner: {
-          model: 'fridge'
-      }
+    owner: {
+        model: 'fridge'
+    }
+
   }
 };
 

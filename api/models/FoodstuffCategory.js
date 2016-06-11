@@ -10,6 +10,13 @@ module.exports = {
   tableName: 'foodstuff_category',
   attributes: {
 
+      name:{
+          type: 'string'
+      },
+      best_before_day: {
+          type: 'int'
+      }
+
   }
 };
 

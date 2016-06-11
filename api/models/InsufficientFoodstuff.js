@@ -10,6 +10,24 @@ module.exports = {
   tableName: 'insufficient_foodstuff',
   attributes: {
 
-  }
+    category: {
+        type: 'int'
+    },
+    foodstuff: {
+        type: 'int'
+    },
+    foodstuff_name: {
+        type: 'string'
+    },
+    order_date: {
+        type: 'date'
+    },
+
+    owner: {
+      model: 'family'
+    }
+
+  },
+
 };
 
