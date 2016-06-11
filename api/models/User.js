@@ -15,7 +15,12 @@ module.exports = {
       last_name:{
           type: 'string'
       },
-
+      login_name: {
+          type: 'string'
+      },
+      password: {
+          type: 'string'
+      },
       owner: {
           model: 'family',
       }

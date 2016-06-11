@@ -15,6 +15,11 @@ module.exports = {
 
       owner: {
           model: 'family',
+      },
+
+      inFridgeFoodstuff: {
+          collection: 'inFridgeFoodstuff',
+          via: 'owner'
       }
 
   }
