@@ -38,9 +38,25 @@ module.exports = {
     dustInsufficientFoodstuff: function(req,res){
         //console.log(req.user.owner);
         //console.log(req.body);
-        //
 
-    }
+    },
 
+    boughtInsufficientFoodstuff: function(req,res) {
+
+    },
+
+    increaseInFridgeFoodstuff: function(req,res){
+        console.log(req.user.owner);
+        console.log(req.body);
+
+        Foodstuff.findOne(req.body.foodstuff_id).then(function(ret){
+            console.log(ret);
+        });
+
+    },
+
+    decreaseInFridgeFoodstuff: function(rew,res){
+
+    },
 };
 

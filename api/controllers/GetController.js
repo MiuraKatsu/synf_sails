@@ -46,6 +46,10 @@ module.exports = {
             });
         });
 
+    },
+
+    inFridgeFoodstuff: function(req,res){
+        //console.log(req.user.owner);
     }
 
 };
