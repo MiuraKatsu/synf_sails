@@ -14,6 +14,9 @@ module.exports = {
       },
       category: {
           type: 'int'
+      },
+      best_before_day: {
+          type: 'int'
       }
   }
 };
